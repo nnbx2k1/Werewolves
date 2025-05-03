@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import photo from "../../assets/photo.svg";
+import photo from "../../assets/banker.jpg";
 import vector from "../../assets/vector.svg";
 import fluentVideo from "../../assets/fluent_video-16-regular.svg";
 import menu from "../../assets/bi_three-dots-vertical.svg";
@@ -9,13 +9,19 @@ import fluentCamera from "../../assets/fluent_camera-24-regular.svg";
 
 const ChatBoxUser = () => {
   const [messages, setMessages] = useState([
-    { from: "left", text: "Hey There!", time: "Today, 8.30pm" },
-    { from: "left", text: "How are you?", time: "Today, 8.30pm" },
-    { from: "right", text: "Hello!", time: "Today, 8.33pm" },
-    { from: "right", text: "I am fine and how are you?", time: "Today, 8.34pm" },
-    { from: "left", text: "I am doing well, Can we meet tomorrow?", time: "Today, 8.36pm" },
-    { from: "right", text: "Yes Sure!", time: "Today, 8.58pm" },
+    { from: "left", text: "Hello! Welcome to ABC Bank. How can I help you today?", time: "Today, 9:00am" },
+    { from: "right", text: "Hi, I have a question about a recent transaction.", time: "Today, 9:01am" },
+    { from: "left", text: "Sure, could you please provide the transaction ID or date?", time: "Today, 9:02am" },
+    { from: "right", text: "Yes, it's TXN123456 on May 2nd.", time: "Today, 9:03am" },
+    { from: "left", text: "Thank you. One moment while I check that for you...", time: "Today, 9:04am" },
+    { from: "left", text: "The transaction of $250 was successfully processed to Amazon. Do you need help with a refund or something else?", time: "Today, 9:06am" },
+    { from: "right", text: "Yes, I didn’t authorize that. Can I dispute it?", time: "Today, 9:07am" },
+    { from: "left", text: "Understood. I’ve initiated the dispute process. You’ll receive an update within 24 hours.", time: "Today, 9:08am" },
+    { from: "right", text: "Thank you for the help!", time: "Today, 9:09am" },
+    { from: "left", text: "You're welcome. Have a great day!", time: "Today, 9:10am" },
   ]);
+  
+  
 
   const [inputValue, setInputValue] = useState("");
   const messagesEndRef = useRef(null);
@@ -75,7 +81,7 @@ const ChatBoxUser = () => {
         <div className="flex items-center gap-2">
           <img src={photo} alt="Avatar" className="w-10 h-10 rounded-full" />
           <div>
-            <div className="font-semibold text-2xl text-gray-800">Anil</div>
+            <div className="font-semibold text-2xl text-gray-800">ABC Bank Support</div>
             <div className="text-sm text-gray-500">Online - Last seen, 2.02pm</div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
 export default function SignUpUser() {
+  
   const navigate = useNavigate();
   const { register } = useAuth();
   const [formData, setFormData] = useState({
@@ -36,9 +37,8 @@ export default function SignUpUser() {
     setError("");
     setShowError(false);
     setLoading(true);
-
+  
     try {
-      // Prepare user data for registration
       const userData = {
         fullName: formData.fullName,
         email: formData.email,
@@ -46,18 +46,18 @@ export default function SignUpUser() {
         phone: formData.phone,
         role: "client"
       };
-
+  
       await register(userData);
-      // The ProtectedRoute will handle the redirection based on the user's role
-      window.location.reload();
+      navigate("/chatuser");  // ✅ Correct redirection
     } catch (err) {
-      console.error('Registration error:', err);
-      setError(err.message || 'Failed to register. Please try again.');
+      console.error("Registration error:", err);
+      setError(err.message || "Failed to register. Please try again.");
       setShowError(true);
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="bg-[#F0F4FA] min-h-screen rounded-3xl flex items-center justify-center p-6">

@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
-import photo from '../assets/photo.svg';
+import photo from '../assets/banker.jpg';
 
 export default function ChatList({ selectedChat, setSelectedChat }) {
 const [searchTerm, setSearchTerm] = useState('');
 
 const departments = [
-{ name: 'Friends Forever', msg: 'Hahahaha!', time: 'Today, 9:52pm', unread: 4, avatar: photo },
-{ name: 'Mera Gang', msg: 'Kyuuuuu???', time: 'Yesterday, 12:31pm', avatar: photo },
-{ name: 'Hiking', msg: "It's not going to happen", time: 'Wednesday, 9:12am', avatar: photo },
-{ name: 'Friends Forever', msg: 'Hahahaha!', time: 'Today, 9:52pm', unread: 4, avatar: photo }
-];
+    { name: 'ABC Bank Support', msg: 'Your account has been verified.', time: 'Today, 9:52am', unread: 2, avatar: photo },
+    { name: 'Loan Department', msg: 'Your loan application is under review.', time: 'Yesterday, 12:31pm', avatar: photo },
+    { name: 'Card Services', msg: "We've blocked your lost card as requested.", time: 'Wednesday, 9:12am', avatar: photo },
+    { name: 'Online Banking Helpdesk', msg: 'Please reset your password using the link sent.', time: 'Today, 8:40am', unread: 1, avatar: photo }
+  ];
+  
 
-const people = [
-{ name: 'Anil', msg: "April fool’s day", time: 'Today, 9:52pm', avatar: photo, seen: true },
-{ name: 'Chuuthiya', msg: 'Baag', time: 'Today, 12:11pm', unread: 1, avatar: photo },
-{ name: 'Mary ma’am', msg: 'You have to report it...', time: 'Today, 2:40pm', unread: 1, avatar: photo },
-{ name: 'Bill Gates', msg: 'Nevermind bro', time: 'Yesterday, 12:31pm', unread: 5, avatar: photo },
-{ name: 'Victoria H', msg: 'Okay, brother. let’s see...', time: 'Wednesday, 11:12am', seen: true, avatar: photo }
-];
-
+  const people = [
+    { name: 'John Smith', msg: "Your account statement is ready.", time: 'Today, 9:52am', avatar: photo, seen: true },
+    { name: 'Sarah Johnson', msg: 'Can you assist with my transaction?', time: 'Today, 12:11pm', unread: 1, avatar: photo },
+    { name: 'Mr. Ahmed (Manager)', msg: 'Please bring the signed documents.', time: 'Today, 2:40pm', unread: 1, avatar: photo },
+    { name: 'Emily Davis', msg: 'Thanks for helping with my account setup.', time: 'Yesterday, 12:31pm', unread: 2, avatar: photo },
+    { name: 'Michael Brown', msg: 'I’ll visit the branch tomorrow.', time: 'Wednesday, 11:12am', seen: true, avatar: photo }
+  ];
+  
 const filteredDepartments = departments.filter(chat =>
 chat.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
 chat.msg.toLowerCase().includes(searchTerm.toLowerCase())

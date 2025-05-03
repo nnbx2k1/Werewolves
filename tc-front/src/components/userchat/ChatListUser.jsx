@@ -1,6 +1,6 @@
 // ChatList.jsx – Refined Based on UI Screenshot
 import React from 'react';
-import photo from "../../assets/photo.svg";
+import photo from "../../assets/banker.jpg";
 
 
 export default function ChatList() {
@@ -15,12 +15,13 @@ export default function ChatList() {
       />
 
       {/* Departments Card */}
+      
 
       <div className="bg-white rounded-xl p-4 shadow-md" style={{ boxShadow: '0 0 8px #0074B7' }}>
         <h2 className="text-xl font-bold text-gray-800  mb-14">Bank</h2>
         {[
-          { name: 'Friends Forever', msg: 'Hahahaha!', time: 'Today, 9:52pm', unread: 4, avatar: photo },
-         
+          { name: 'ABC Bank Support', msg: 'Your dispute has been initiated.', time: 'Today, 9:52am', unread: 2, avatar: photo }
+
         ].map((chat, index) => (
           <div key={index} className="flex items-center justify-between mb-120 border-b  px-3 py-3 rounded-4xl hover:bg-[#0074B7] transition duration-200 last:border-0">
             <div className="flex items-center gap-2">

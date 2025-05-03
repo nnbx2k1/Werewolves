@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'; // 👈 Add this
+import { AuthProvider } from './context/AuthContext';
 
 // Pages & Components
 import Homepage from './pages/Landingpage/HeroPage.jsx';
@@ -22,31 +23,32 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}> {/* ✅ Wrap app */}
-      <div className="flex h-screen">
-        <div className="flex-1 overflow-auto">
-          <Routes>
-            {/* Auth & Main Pages */}
-            <Route path="/" element={<Homepage />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/SignUpUser" element={<SignUpUser />} />
+      <AuthProvider>
+        <div className="flex h-screen">
+          <div className="flex-1 overflow-auto">
+            <Routes>
+              {/* Auth & Main Pages */}
+              <Route path="/" element={<Homepage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/SignUpUser" element={<SignUpUser />} />
 
-            {/* User/Admin Dashboards */}
-            <Route path="/HomePage" element={<HomePage />} />
-            <Route path="/AdminDashboard" element={<AdminDashboard />} />
+              {/* User/Admin Dashboards */}
+              <Route path="/AdminDashboard" element={<AdminDashboard />} />
 
-            {/* Messaging + Signature */}
-            <Route path="/chatadmin" element={<Chatadmin />} />
-            <Route path="/chatuser" element={<Chatuser />} />
-            <Route path="/esign" element={<ESignature />} />
-            <Route path="/userhome" element={<UserHome />} />
-            <Route path="/notifications" element={<NotificationsPage />} />
-            <Route path="/profile" element={<UserProfile />} />
+              {/* Messaging + Signature */}
+              <Route path="/chatadmin" element={<Chatadmin />} />
+              <Route path="/chatuser" element={<Chatuser />} />
+              <Route path="/esign" element={<ESignature />} />
+              <Route path="/userhome" element={<UserHome />} />
+              <Route path="/notifications" element={<NotificationsPage />} />
+              <Route path="/profile" element={<UserProfile />} />
 
-            {/* Fallback */}
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+              {/* Fallback */}
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }

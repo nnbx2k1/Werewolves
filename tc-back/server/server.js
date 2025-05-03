@@ -92,7 +92,7 @@ app.use((req, res, next) => {
 // Database connection with retry logic
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/secure-banking-messenger', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/trustychat', {
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
       maxPoolSize: 10,
@@ -100,6 +100,7 @@ const connectDB = async () => {
       retryWrites: true,
       retryReads: true
     });
+    console.log(process.env.MONGODB_URI || 'mongodb://localhost:27017/trustychat');
     console.log('Connected to MongoDB');
   } catch (err) {
     console.error('MongoDB connection error:', err);

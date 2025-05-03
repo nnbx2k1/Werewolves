@@ -40,7 +40,7 @@ npm install express mongoose cors socket.io helmet compression morgan express-ra
 3. Create a `.env` file in the root directory with the following variables:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/werewolves
+MONGODB_URI=mongodb://localhost:27017/trustychat
 JWT_SECRET=your-secret-key
 JWT_EXPIRES_IN=24h
 JWT_REFRESH_SECRET=your-refresh-secret

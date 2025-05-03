@@ -6,15 +6,20 @@ function Chatadmin() {
 const [selectedChat, setSelectedChat] = useState(null);
 
 const [chatMessages, setChatMessages] = useState({
-Anil: [
-{ from: "left", text: "Hey There!", time: "Today, 8.30pm" },
-{ from: "right", text: "Hello!", time: "Today, 8.33pm" },
-],
-"Friends Forever": [
-{ from: "left", text: "Meeting soon?", time: "Today, 10.00am" },
-],
-});
-
+    "Bank Support": [
+      { from: "left", text: "Hello! Welcome to ABC Bank. How can I help you today?", time: "Today, 9:00am" },
+      { from: "right", text: "Hi, I have a question about a recent transaction.", time: "Today, 9:01am" },
+      { from: "left", text: "Sure, could you please provide the transaction ID or date?", time: "Today, 9:02am" },
+      { from: "right", text: "Yes, it's TXN123456 on May 2nd.", time: "Today, 9:03am" },
+      { from: "left", text: "Thank you. One moment while I check that for you...", time: "Today, 9:04am" },
+      { from: "left", text: "The transaction of $250 was successfully processed to Amazon. Do you need help with a refund or something else?", time: "Today, 9:06am" },
+      { from: "right", text: "Yes, I didn’t authorize that. Can I dispute it?", time: "Today, 9:07am" },
+      { from: "left", text: "Understood. I’ve initiated the dispute process. You’ll receive an update within 24 hours.", time: "Today, 9:08am" },
+      { from: "right", text: "Thank you for the help!", time: "Today, 9:09am" },
+      { from: "left", text: "You're welcome. Have a great day!", time: "Today, 9:10am" },
+    ],
+  });
+  
 const handleSendMessage = (newMessage) => {
 if (!selectedChat?.name) return;
 const chatName = selectedChat.name;

@@ -1,4 +1,4 @@
-import photo from "../assets/photo.svg";
+import photo from "../assets/banker.jpg";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HomeIcon, MessageIcon, BellIcon, SettingsIcon, LogoutIcon } from "./Icons";
