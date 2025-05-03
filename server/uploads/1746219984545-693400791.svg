@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">Secure Banking Messenger - Project Architecture</text>
+  
+  <!-- Main Containers -->
+  <rect x="50" y="80" width="900" height="680" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2" rx="10" ry="10"/>
+  
+  <!-- Front-end Section -->
+  <rect x="80" y="120" width="300" height="200" fill="#e3f2fd" stroke="#90caf9" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="145" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Client Frontend</text>
+  <text x="230" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#555">(React.js)</text>
+  
+  <!-- Frontend Components -->
+  <rect x="100" y="180" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="205" text-anchor="middle" font-family="Arial" font-size="12">Authentication</text>
+  
+  <rect x="100" y="230" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="255" text-anchor="middle" font-family="Arial" font-size="12">Messaging UI</text>
+  
+  <rect x="230" y="180" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="205" text-anchor="middle" font-family="Arial" font-size="12">Document Upload</text>
+  
+  <rect x="230" y="230" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="255" text-anchor="middle" font-family="Arial" font-size="12">E-Signature UI</text>
+  
+  <rect x="100" y="280" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="305" text-anchor="middle" font-family="Arial" font-size="12">Message Backpack</text>
+  
+  <rect x="230" y="280" width="120" height="40" fill="#bbdefb" stroke="#64b5f6" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="305" text-anchor="middle" font-family="Arial" font-size="12">Incognito Chat</text>
+  
+  <!-- Backend Section -->
+  <rect x="420" y="120" width="500" height="200" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="2" rx="5" ry="5"/>
+  <text x="670" y="145" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Server Backend</text>
+  <text x="670" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#555">(Express.js + Node.js)</text>
+  
+  <!-- Backend Components -->
+  <rect x="440" y="180" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="205" text-anchor="middle" font-family="Arial" font-size="12">Authentication API</text>
+  
+  <rect x="440" y="230" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="255" text-anchor="middle" font-family="Arial" font-size="12">Message Router</text>
+  
+  <rect x="590" y="180" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="660" y="205" text-anchor="middle" font-family="Arial" font-size="12">Document Manager</text>
+  
+  <rect x="590" y="230" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="660" y="255" text-anchor="middle" font-family="Arial" font-size="12">E-Signature Service</text>
+  
+  <rect x="740" y="180" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="810" y="205" text-anchor="middle" font-family="Arial" font-size="12">AI Processing &amp; OCR</text>
+  
+  <rect x="740" y="230" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="810" y="255" text-anchor="middle" font-family="Arial" font-size="12">Audit Logging</text>
+  
+  <rect x="440" y="280" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="305" text-anchor="middle" font-family="Arial" font-size="12">Persistence Manager</text>
+  
+  <rect x="590" y="280" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="660" y="305" text-anchor="middle" font-family="Arial" font-size="12">Access Control</text>
+  
+  <rect x="740" y="280" width="140" height="40" fill="#c8e6c9" stroke="#81c784" stroke-width="1" rx="5" ry="5"/>
+  <text x="810" y="305" text-anchor="middle" font-family="Arial" font-size="12">Thread Summarizer</text>
+  
+  <!-- Database Section -->
+  <rect x="80" y="350" width="300" height="160" fill="#fff3e0" stroke="#ffe0b2" stroke-width="2" rx="5" ry="5"/>
+  <text x="230" y="375" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Database Layer</text>
+  <text x="230" y="395" text-anchor="middle" font-family="Arial" font-size="12" fill="#555">(MongoDB)</text>
+  
+  <!-- Database Components -->
+  <rect x="100" y="410" width="120" height="40" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="435" text-anchor="middle" font-family="Arial" font-size="12">User Collection</text>
+  
+  <rect x="100" y="460" width="120" height="40" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="485" text-anchor="middle" font-family="Arial" font-size="12">Messages Collection</text>
+  
+  <rect x="230" y="410" width="120" height="40" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="435" text-anchor="middle" font-family="Arial" font-size="12">Documents Collection</text>
+  
+  <rect x="230" y="460" width="120" height="40" fill="#ffe0b2" stroke="#ffcc80" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="485" text-anchor="middle" font-family="Arial" font-size="12">Audit Logs Collection</text>
+  
+  <!-- External Integrations -->
+  <rect x="420" y="350" width="500" height="160" fill="#e0f7fa" stroke="#b2ebf2" stroke-width="2" rx="5" ry="5"/>
+  <text x="670" y="375" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">External Integrations</text>
+  <text x="670" y="395" text-anchor="middle" font-family="Arial" font-size="12" fill="#555">(APIs and Services)</text>
+  
+  <!-- Integration Components -->
+  <rect x="440" y="410" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="435" text-anchor="middle" font-family="Arial" font-size="12">E-Signature API</text>
+  <text x="510" y="450" text-anchor="middle" font-family="Arial" font-size="10">(DocuSign / Yousign)</text>
+  
+  <rect x="440" y="460" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="510" y="485" text-anchor="middle" font-family="Arial" font-size="12">Banking ERP Mock</text>
+  
+  <rect x="590" y="410" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="660" y="435" text-anchor="middle" font-family="Arial" font-size="12">AI Services</text>
+  <text x="660" y="450" text-anchor="middle" font-family="Arial" font-size="10">(Document Analysis)</text>
+  
+  <rect x="590" y="460" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="660" y="485" text-anchor="middle" font-family="Arial" font-size="12">Blockchain Service</text>
+  <text x="660" y="500" text-anchor="middle" font-family="Arial" font-size="10">(Optional - Future)</text>
+  
+  <rect x="740" y="410" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="810" y="435" text-anchor="middle" font-family="Arial" font-size="12">OAuth / SAML</text>
+  <text x="810" y="450" text-anchor="middle" font-family="Arial" font-size="10">(SSO Integration)</text>
+  
+  <rect x="740" y="460" width="140" height="40" fill="#b2ebf2" stroke="#80deea" stroke-width="1" rx="5" ry="5"/>
+  <text x="810" y="485" text-anchor="middle" font-family="Arial" font-size="12">Webhooks Service</text>
+  
+  <!-- Security Layer -->
+  <rect x="80" y="540" width="840" height="80" fill="#f3e5f5" stroke="#e1bee7" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="565" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Security Layer</text>
+  
+  <!-- Security Components -->
+  <rect x="100" y="580" width="150" height="30" fill="#e1bee7" stroke="#ce93d8" stroke-width="1" rx="5" ry="5"/>
+  <text x="175" y="600" text-anchor="middle" font-family="Arial" font-size="12">End-to-End Encryption</text>
+  
+  <rect x="260" y="580" width="150" height="30" fill="#e1bee7" stroke="#ce93d8" stroke-width="1" rx="5" ry="5"/>
+  <text x="335" y="600" text-anchor="middle" font-family="Arial" font-size="12">JWT Authentication</text>
+  
+  <rect x="420" y="580" width="150" height="30" fill="#e1bee7" stroke="#ce93d8" stroke-width="1" rx="5" ry="5"/>
+  <text x="495" y="600" text-anchor="middle" font-family="Arial" font-size="12">Secure API Gateway</text>
+  
+  <rect x="580" y="580" width="150" height="30" fill="#e1bee7" stroke="#ce93d8" stroke-width="1" rx="5" ry="5"/>
+  <text x="655" y="600" text-anchor="middle" font-family="Arial" font-size="12">Document Encryption</text>
+  
+  <rect x="740" y="580" width="150" height="30" fill="#e1bee7" stroke="#ce93d8" stroke-width="1" rx="5" ry="5"/>
+  <text x="815" y="600" text-anchor="middle" font-family="Arial" font-size="12">HTTPS/TLS</text>
+  
+  <!-- Infrastructure -->
+  <rect x="80" y="650" width="840" height="80" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="675" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Infrastructure</text>
+  
+  <!-- Infrastructure Components -->
+  <rect x="100" y="690" width="150" height="30" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1" rx="5" ry="5"/>
+  <text x="175" y="710" text-anchor="middle" font-family="Arial" font-size="12">MongoDB Atlas</text>
+  
+  <rect x="260" y="690" width="150" height="30" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1" rx="5" ry="5"/>
+  <text x="335" y="710" text-anchor="middle" font-family="Arial" font-size="12">Node.js Server</text>
+  
+  <rect x="420" y="690" width="150" height="30" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1" rx="5" ry="5"/>
+  <text x="495" y="710" text-anchor="middle" font-family="Arial" font-size="12">React Client (SPA)</text>
+  
+  <rect x="580" y="690" width="150" height="30" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1" rx="5" ry="5"/>
+  <text x="655" y="710" text-anchor="middle" font-family="Arial" font-size="12">Socket.IO</text>
+  
+  <rect x="740" y="690" width="150" height="30" fill="#e0e0e0" stroke="#bdbdbd" stroke-width="1" rx="5" ry="5"/>
+  <text x="815" y="710" text-anchor="middle" font-family="Arial" font-size="12">REST/GraphQL APIs</text>
+  
+  <!-- Connection Lines -->
+  <!-- Frontend to Backend -->
+  <line x1="230" y1="320" x2="230" y2="335" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="230" y1="335" x2="670" y2="335" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="670" y1="335" x2="670" y2="320" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Backend to Database -->
+  <line x1="670" y1="320" x2="670" y2="335" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="670" y1="335" x2="230" y2="335" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="230" y1="335" x2="230" y2="350" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Backend to Integrations -->
+  <line x1="670" y1="320" x2="670" y2="350" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- MVP Highlight -->
+  <rect x="65" y="730" width="15" height="15" fill="#4caf50" stroke="none"/>
+  <text x="90" y="743" font-family="Arial" font-size="14" fill="#333333">MVP Components</text>
+  
+  <!-- MVP Markers -->
+  <circle cx="80" y="120" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="100" y="180" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="100" y="230" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="230" y="180" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="230" y="230" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="420" y="120" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="440" y="180" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="440" y="230" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="590" y="180" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="590" y="230" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="740" y="180" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="740" y="230" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="80" y="350" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="100" y="410" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="100" y="460" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="230" y="410" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="440" y="410" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="590" y="410" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="100" y="580" r="8" fill="#4caf50" stroke="none"/>
+  <circle cx="260" y="580" r="8" fill="#4caf50" stroke="none"/>
+</svg>
