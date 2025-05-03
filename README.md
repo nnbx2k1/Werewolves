@@ -119,7 +119,3 @@ server/
 - End-to-end encryption
 - Input validation
 - Audit logging
-
-## License
-
-ISC License - See LICENSE file for details 
