@@ -1,4 +1,4 @@
-# Werewolves - Secure Messaging Platform
+# TrustyApp - Secure Messaging Platform
 
 A secure, real-time messaging platform with end-to-end encryption and advanced security features.
 
